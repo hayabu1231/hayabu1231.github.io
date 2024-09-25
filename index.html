@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Hayabuのポートフォリオ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css?v=5">
+    <script src="main.js?v=1"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <menu class="menu">
+                <a href="#home"><li>Home</li></a>
+                <a href="#works"><li>Works</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#blog"><li>Blog</li></a>
+            </menu>
+        </nav>
+    </header>
+    <div class="block home-block" id="home">
+        <h1 class="home-name">Hayabu Mikage</h1>
+    </div>
+    <div class="block" id="works">
+        <h2 class="block-title">Works</h2>
+        <ul class="pinned_items">
+            <a href="">
+                <li class="pinned_item onScroll" data-show="false">
+                    <img height="100px" width="100%" src="img/this.jpeg" class="home-work-img">
+                    <h3>Hayabuポートフォリオサイト</h3>
+                </li>
+            </a>
+            <a href="https://happiness-dream-server.net">
+                <li class="pinned_item onScroll" data-show="false">
+                    <img height="100px" width="100%" src="img/hds.jpeg" class="home-work-img">
+                    <h3>Happiness Dream Server公式サイト</h3>
+                </li>
+            </a>
+        </ul>
+    </div>
+    <div class="about-block block" id="about">
+        <h2 class="block-title">About</h2>
+        <img src="img/icon.jpeg" width="100px" height="100px" class="home-about-icon">
+        <h3>御影　はやぶ</h3>
+        <p class="home-introduce">
+            サイトのデザインや、プログラムの作成をしている、フロント&バックエンド両方対応できるプログラマー。<br>
+            開発には一般的なプログラマーとは違い、iPadとiPhoneのみをメインとして使用している。<br>
+            Minecraft統合版のアドオン等の作成も得意とし、ブログではそれに関する知識も載せている。<a href="https://giftee.com/u/hayabu1231"><img src="img/gift.svg"></a>
+        </p><br>
+        <h4>得意言語</h4>
+        <ul class="home-language">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>SQL</li>
+        </ul><br>
+        <h4>SNS</h4>
+        <ul class="home-sns">
+            <a rel="me" href="https://fedibird.com/@hayabu1231"><li><img src="img/sns/mastodon.svg" width="40px">Mastodon</li></a>
+            <a href="https://threads.net/@hayabu1231"><li><img src="img/sns/threads.svg" height="45px">Threads</li></a>
+            <a href="https://www.youtube.com/@hayabu1231"><li><img src="img/sns/youtube.svg" width="50px">YouTube</li></a>
+            <a href="https://www.twitch.tv/hayabu1231"><li><img src="img/sns/twitch.svg" width="40px">Twitch</li></a>
+            <a href="https://github.com/hayabu1231"><li><img src="img/sns/github.svg" width="50px">GitHub</li></a>
+            <a href="https://bsky.app/profile/hayabu1231.bsky.social"><li><img src="img/sns/bsky.svg" width="50px">Bluesky</li></a>
+            <a href="javascript:document.getElementById('nostr-picker').showModal()"><li><img src="img/sns/nostr.svg" width="50px">Nostr</li></a>
+            <dialog id="nostr-picker" class="home-sns-nostr-picker">
+                <h5>Nostrを…</h5>
+                <ul class="home-sns-nostr-picker-services">
+                    <li><a href="nostr://nprofile1qqs9ctteeu49kvqr6dx8fyfe8tl56mx8sml0fefcxsla3gju009fqus3vu345">アプリで開く</a></li>
+                    <li><a href="https://nostter.app/nprofile1qqs9ctteeu49kvqr6dx8fyfe8tl56mx8sml0fefcxsla3gju009fqus3vu345">Nostterで開く</a></li>
+                    <li><a href="javascript:if(navigator.clipboard){navigator.clipboard.writeText('nprofile1qqs9ctteeu49kvqr6dx8fyfe8tl56mx8sml0fefcxsla3gju009fqus3vu345');addMessage('コピーしました')}else{addMessage('コピーできませんでした')}">npubをコピー</a></li>
+                </ul>
+                <form method="dialog">
+                    <button class="home-sns-nostr-picker-close">閉じる</button>
+                </form>
+            </dialog>
+        </ul>
+    </div>
+    <div class="block" id="blog">
+        <h2 class="block-title">Blog</h2>
+        <p>現在、ブログシステムメンテナンス中につき表示できません…</p>
+        <!--
+        <h3>絞り込む</h3>
+        <div class="home-blog-narrow">
+            <h3>公開日時</h3>
+            <input type="date" id="date">
+            <h3>カテゴリー</h3>
+            <label><input type="checkbox">Minecraft</label>
+            <label><input type="checkbox">プログラミング</label>
+            <label><input type="checkbox">Apple</label>
+        </div>
+        <ul class="pinned_items">
+            <li class="pinned_item onScroll" data-show="false" data-blog="4">
+                <h3 class="home-blog-title">アドオン作成方法</h3>
+                <h4 class="home-blog-date">2022/04/12</h4>
+                <p class="home-blog-description">アドオンの作り方を説明しています。</p>
+            </li>
+            <li class="pinned_item onScroll" data-show="false" data-blog="3">
+                <h3 class="home-blog-title">防具の形を変えよう！</h3>
+                <h4 class="home-blog-date">2021/04/22</h4>
+                <p class="home-blog-description">防具の形を変えるリソースパックの作り方を説明します。</p>
+            </li>
+            <li class="pinned_item onScroll" data-show="false" data-blog="2">
+                <h3 class="home-blog-title">アップデートの注意事項</h3>
+                <h4 class="home-blog-date">2020/10/16</h4>
+                 <p class="home-blog-description">リソパのアップデートの注意事項を説明します。</p>
+            </li>
+            <li class="pinned_item onScroll" data-show="false" data-blog="1">
+                <h3 class="home-blog-title">このブログへようこそ！</h3>
+                <h4 class="home-blog-date">2020/03/16</h4>
+                <p class="home-blog-description">このブログについて説明します。</p>
+            </li>
+        </ul>
+        -->
+        <div class="blog-screen" id="blog-screen"></div>
+        <div class="blog-dialog" id="blog-dialog">
+            <iframe id="blog-article" class="blog-article" src="/blog/post/no-3/index.html"></iframe>
+        </div>
+    </div>
+    <footer class="block">
+        <p><small>&copy;hayabu1231</small></p>
+    </footer>
+    
+    <div id="logs" class="logs"></div>
+</body>
+</html>
