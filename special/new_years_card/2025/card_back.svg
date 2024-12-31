@@ -1,0 +1,33 @@
+<svg viewBox="0 0 100 148" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <radialGradient id="gradient-sun">
+            <stop offset="80%" stop-color="yellow" />
+            <stop offset="100%" stop-color="yellow" stop-opacity="0" />
+        </radialGradient>
+        <radialGradient id="gradient-bg" cx="0" cy="0">
+            <stop offset="10%" stop-color="#f00" />
+            <stop offset="50%" stop-color="#f31" />
+            <stop offset="100%" stop-color="#f63" />
+        </radialGradient>
+        <radialGradient id="gradient-snake" cy="40%">
+            <stop offset="10%" stop-color="#000" />
+            <stop offset="80%" stop-color="#0a0" />
+            <stop offset="100%" stop-color="#8d8" />
+        </radialGradient>
+        <radialGradient id="gradient-snake2" cx="34%" cy="53%">
+            <stop offset="10%" stop-color="#000" />
+            <stop offset="80%" stop-color="#0a0" />
+            <stop offset="100%" stop-color="#8d8" />
+        </radialGradient>
+    </defs>
+    <rect x="0" y="0" height="148" width="100" fill="url('#gradient-bg')" />
+    <path d="M10,130 A 10,1,0,1,0,90,130 L 60,70 L 40,70 z" fill="#0aa" />
+    <path d="M25,100 A 10,1,0,1,0,50,100 A 10,1,0,1,1,75,100 L 60,70 L 40,70 z" fill="#fff2f2" />
+    <text x="90" y="10" font-family="sans-serif" font-weight="bold" font-size="8" writing-mode="tb" fill="#f2f2f2">あけまして</text>
+    <text x="80" y="20" font-family="sans-serif" font-weight="bold" font-size="8" writing-mode="tb" fill="#f2f2f2">おめでとうございます</text>
+    <ellipse cx="50" cy="130" rx="30" ry="15" fill="url('#gradient-snake')" />
+    <ellipse cx="50" cy="125" rx="20" ry="10" fill="url('#gradient-snake')" />
+    <ellipse cx="50" cy="123" rx="10" ry="5" fill="url('#gradient-snake')" />
+    <path d="M 55,123 A 7,20,0,0,0,55,43 A 18,9,0,0,0,37,52 L 40,55 L 37,58 A 10,5,0,0,0,47,63 A 12,30,0,0,1,45,120 A 5,2,0,0,0,55,123" fill="url('#gradient-snake2')" />
+    <circle cx="52" cy="49" r="1" fill="#000" />
+</svg>
